@@ -1,0 +1,25 @@
+2025-11-01 10:18:00 [ERROR] API Connection Error
+Stack trace:
+  at apiClient.connect (api.js:45)
+  at processRequest (handler.js:123)
+  at main (app.js:89)
+Error: Connection timeout after 5000ms
+Details: Unable to reach https://api.example.com/v1/data
+
+2025-11-01 11:30:15 [ERROR] Database Query Failed
+Error: Column 'user_email' does not exist
+Query: SELECT user_id, user_email FROM users WHERE status = 'active'
+Table: users
+Location: db/queries.js:78
+
+2025-11-01 14:45:30 [ERROR] File Not Found
+Error: ENOENT: no such file or directory, open '/tmp/upload_abc123.pdf'
+  at Object.openSync (fs.js:476)
+  at Object.readFileSync (fs.js:377)
+  at uploadHandler (upload.js:23)
+
+2025-11-01 16:20:45 [ERROR] Memory Limit Exceeded
+Process: worker-3
+Memory Usage: 512MB / 256MB limit
+Action: Process terminated automatically
+Recommendation: Increase memory limit or optimize worker process
