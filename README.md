@@ -1,1 +1,1 @@
-https://github.com/kaye2512/devops_exercice/tree/main/01_server_stats
+https://roadmap.sh/projects/server-stats
